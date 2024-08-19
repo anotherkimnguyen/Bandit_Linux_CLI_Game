@@ -61,9 +61,14 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ```sh
 ~$ cd inhere
+~inhere$ ls
+
+Shows a bunch of files
+
 ~inhere$ file ./-file*
 
 Shows that file07 is ASCII text
+
 ~inhere$ cat ./-file07
 ```
 
@@ -77,11 +82,14 @@ Shows that file07 is ASCII text
 **:computer:Command:**
 
 ```sh
-xxxxx
+~$ cd inhere
+~inhere$ ls
+~inhere$ find . -type f -size 1033c ! -executable
+~inhere$ cat ./maybehere07/.file2
 ```
 
 **:unlock:Password:**
 
 ```sh
-xxxxx
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 ```
