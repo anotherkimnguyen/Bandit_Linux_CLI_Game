@@ -18,26 +18,26 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 **:computer:Command:**
 
 ```sh
-xxxxx
+cat < -
 ```
 
 **:unlock:Password:**
 
 ```sh
-xxxxx
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
 ## Level 2-3
 **:computer:Command:**
 
 ```sh
-xxxxx
+cat "spaces in this filename"
 ```
 
 **:unlock:Password:**
 
 ```sh
-xxxxx
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```
 
 ## Level 3-4
