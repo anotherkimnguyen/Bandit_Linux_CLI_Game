@@ -83,7 +83,6 @@ Shows that file07 is ASCII text
 
 ```sh
 ~$ cd inhere
-~inhere$ ls
 ~inhere$ find . -type f -size 1033c ! -executable
 ~inhere$ cat ./maybehere07/.file2
 ```
@@ -92,4 +91,22 @@ Shows that file07 is ASCII text
 
 ```sh
 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+```
+## Level 6-7
+**:computer:Command:**
+
+```sh
+~$ find / -user bandit7 -group bandit6 -size 33c
+
+A bunch of "Permission denied" messages
+
+~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null to suppress error messages about directories I don't have access to
+
+~$ cat /var/lib/dpkg/info/bandit7.password
+```
+
+**:unlock:Password:**
+
+```sh
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ```
