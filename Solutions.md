@@ -44,13 +44,16 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 **:computer:Command:**
 
 ```sh
-xxxxx
+~$ cd inhere
+~$ ls -a
+~$ cat ...Hiding-From-You
+
 ```
 
 **:unlock:Password:**
 
 ```sh
-xxxxx
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 ```
 
 ## Level 4-5
