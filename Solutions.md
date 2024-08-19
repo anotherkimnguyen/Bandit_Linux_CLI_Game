@@ -1,6 +1,6 @@
-# Solution for clmystery
+# Solution for clmystery - [Game here](https://github.com/veltman/clmystery)
 The murderer is ***Jeremy Bowers*** 💀
-# Passwords for the Trial of Might
+# Passwords for the Trial of Might/Bandit game - [Game here](https://overthewire.org/wargames/bandit/)
 ## Level 0-1
 **:computer:Command:**
 
@@ -114,4 +114,134 @@ Shows a file called "/var/lib/dpkg/info/bandit7.password"
 
 ```sh
 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+```
+## Level 7-8
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 8-9
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 9-10
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 10-11
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 11-12
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 12-13
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 13-14
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 14-15
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 15-16
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 16-17
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 17-18
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 18-19
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 19-20
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
 ```
