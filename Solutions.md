@@ -45,8 +45,8 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ```sh
 ~$ cd inhere
-~$ ls -a
-~$ cat ...Hiding-From-You
+~inhere$ ls -a
+~inhere$ cat ...Hiding-From-You
 
 ```
 
@@ -60,13 +60,17 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 **:computer:Command:**
 
 ```sh
-xxxxx
+~$ cd inhere
+~inhere$ file ./-file*
+
+Shows that file07 is ASCII text
+~inhere$ cat ./-file07
 ```
 
 **:unlock:Password:**
 
 ```sh
-xxxxx
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 ```
 
 ## Level 5-6
