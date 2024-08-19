@@ -46,6 +46,9 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```sh
 ~$ cd inhere
 ~inhere$ ls -a
+
+There's a file called "...Hiding-From-You"
+
 ~inhere$ cat ...Hiding-From-You
 
 ```
@@ -65,7 +68,7 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 Shows a bunch of files
 
-~inhere$ file ./-file*
+~inhere$ file ./-file* 
 
 Shows that file07 is ASCII text
 
@@ -101,6 +104,8 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 A bunch of "Permission denied" messages
 
 ~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null to suppress error messages about directories I don't have access to
+
+Shows a file called "/var/lib/dpkg/info/bandit7.password"
 
 ~$ cat /var/lib/dpkg/info/bandit7.password
 ```
