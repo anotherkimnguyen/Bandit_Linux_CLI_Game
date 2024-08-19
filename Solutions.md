@@ -18,7 +18,7 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 **:computer:Command:**
 
 ```sh
-cat < -
+cat < - 
 ```
 
 **:unlock:Password:**
@@ -66,7 +66,7 @@ There's a file called "...Hiding-From-You"
 ~$ cd inhere
 ~inhere$ ls
 
-Shows a bunch of files
+Shows a bunch of files named -fileDIGITS
 
 ~inhere$ file ./-file* 
 
@@ -86,7 +86,7 @@ Shows that file07 is ASCII text
 
 ```sh
 ~$ cd inhere
-~inhere$ find . -type f -size 1033c ! -executable
+~inhere$ find . -type f -size 1033c ! -executable (it's a file, it's 1033 bytes in size and it's not executable)
 ~inhere$ cat ./maybehere07/.file2
 ```
 
@@ -118,22 +118,27 @@ morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ## Level 7-8
 **:computer:Command:**
 ```sh
-xx
+grep millionth data.txt
 ```
 **:unlock:Password:**
 
 ```sh
-XXX
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```
 ## Level 8-9
 **:computer:Command:**
 ```sh
-xx
+~$ cat data.txt
+
+File is huge
+
+~$ cat data.txt | sort (to sort lines in order)
+~$ cat data.txt | sort | uniq -u (I only want the line that appears once)
 ```
 **:unlock:Password:**
 
 ```sh
-XXX
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ```
 ## Level 9-10
 **:computer:Command:**
