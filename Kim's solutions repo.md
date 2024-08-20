@@ -143,42 +143,108 @@ File is huge
 ## Level 9-10
 **:computer:Command:**
 ```sh
-xx
+strings data.txt | grep =
+or
+strings data.txt | grep ^= to only see the lines that begin with =
 ```
 **:unlock:Password:**
 
 ```sh
-XXX
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 ```
 ## Level 10-11
 **:computer:Command:**
 ```sh
-xx
+base64 -d data.txt
 ```
 **:unlock:Password:**
 
 ```sh
-XXX
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 ```
 ## Level 11-12
 **:computer:Command:**
 ```sh
-xx
+cat data.txt | tr A-Za-z N-ZA-Mn-za-m (translate A-Z and a-z)
 ```
 **:unlock:Password:**
 
 ```sh
-XXX
+7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 ```
-## Level 12-13
+## Level 12-13 - :warning: Super difficult
 **:computer:Command:**
 ```sh
-xx
+bandit12@bandit:~$ mkdir /tmp/kim
+bandit12@bandit:~$ cp data.txt /tmp/kim
+bandit12@bandit:~$ cd /tmp/kim
+bandit12@bandit:/tmp/kim$ ls
+[We see we only have one file called data.txt. Let’s decompress using xxd]
+bandit12@bandit:/tmp/kim$ xxd -r data.txt > data
+bandit12@bandit:/tmp/kim$ ls
+[We see we now have data  data.txt]
+bandit12@bandit:/tmp/kim$ file data [To see what type of file data is]
+[The info we get is that data is gzip compressed and used to be called data2.bin. We need to change the extension to decompress]
+bandit12@bandit:/tmp/kim$ mv data file.gz [Changing extension to gz - changing name from data to file too]
+bandit12@bandit:/tmp/kim$ gzip -d file.gz [Decompressing]
+bandit12@bandit:/tmp/kim$ file file
+[file: bzip2 compressed data - let’s change the extension again in order to decompress]
+bandit12@bandit:/tmp/kim$ mv file file.bz2
+bandit12@bandit:/tmp/kim$ bzip2 -d file.bz2
+bandit12@bandit:/tmp/kim$ ls
+[We see data.txt and file]
+bandit12@bandit:/tmp/kim$ file file
+[file: gzip compressed data, was "data4.bin" - let’s change the extension again and decompress and see the type of file and repeat]
+bandit12@bandit:/tmp/kim$ mv file file.gz
+bandit12@bandit:/tmp/kim$ gzip -d file.gz
+bandit12@bandit:/tmp/kim$ ls
+[data.txt  file]
+bandit12@bandit:/tmp/kim$ file file
+[file: POSIX tar archive (GNU) - it’s not gzip or bzip2 compressed, it’s a compressed tar archive. Let’s change the extension to decompress]
+bandit12@bandit:/tmp/kim$ mv file file.tar
+bandit12@bandit:/tmp/kim$ tar xf file.tar
+bandit12@bandit:/tmp/kim$ ls
+[Now we have data5.bin  data.txt  file.tar. What type is data5.bin]
+bandit12@bandit:/tmp/kim$ file data5.bin
+[data5.bin is also a compressed tar archive]
+bandit12@bandit:/tmp/kim$ rm file.tar
+bandit12@bandit:/tmp/kim$ rm data.txt [Let’s delete those, we’re not using them]
+bandit12@bandit:/tmp/kim$ ls
+[Now we only have data5.bin]
+bandit12@bandit:/tmp/kim$ file data5.bin
+[data5.bin: POSIX tar archive (GNU)]
+bandit12@bandit:/tmp/kim$ mv data5.bin data.tar [Repeat - list, get type, change extension, decompress, list…]
+bandit12@bandit:/tmp/kim$ tar xf data.tar
+bandit12@bandit:/tmp/kim$ ls
+[data6.bin  data.tar]
+bandit12@bandit:/tmp/kim$ file data6.bin
+[data6.bin: bzip2 compressed data, block size = 900k]
+bandit12@bandit:/tmp/kim$ mv data6.bin data.bz2
+bandit12@bandit:/tmp/kim$ bzip2 -d data.bz2
+bandit12@bandit:/tmp/kim$ ls
+[data  data.tar]
+bandit12@bandit:/tmp/kim$ file data
+[data: POSIX tar archive (GNU)]
+bandit12@bandit:/tmp/kim$ mv data data.tar
+bandit12@bandit:/tmp/kim$ tar xf data.tar
+bandit12@bandit:/tmp/kim$ ls
+[data8.bin  data.tar]
+bandit12@bandit:/tmp/kim$ file data8.bin
+[data8.bin: gzip compressed data, was "data9.bin"]
+bandit12@bandit:/tmp/kim$ mv data8.bin data.gz
+bandit12@bandit:/tmp/kim$ gzip -d data.gz
+bandit12@bandit:/tmp/kim$ ls
+[data  data.tar]
+bandit12@bandit:/tmp/kim$ file data
+[data: ASCII text - Finally readable!]
+bandit12@bandit:/tmp/kim$ cat data
 ```
+Basically, decompress data.txt to data using xxd. See what type of file we have. Change extension to decompress again. List. See what type of file. Change extention to decompress. Repeat :skull:
+
 **:unlock:Password:**
 
 ```sh
-XXX
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 ```
 ## Level 13-14
 **:computer:Command:**
