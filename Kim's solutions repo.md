@@ -99,15 +99,15 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 **:computer:Command:**
 
 ```sh
-~$ find / -user bandit7 -group bandit6 -size 33c
+find / -user bandit7 -group bandit6 -size 33c
 
 A bunch of "Permission denied" messages
 
-~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null to suppress error messages about directories I don't have access to
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null to suppress error messages about directories I don't have access to
 
 Shows a file called "/var/lib/dpkg/info/bandit7.password"
 
-~$ cat /var/lib/dpkg/info/bandit7.password
+cat /var/lib/dpkg/info/bandit7.password
 ```
 
 **:unlock:Password:**
