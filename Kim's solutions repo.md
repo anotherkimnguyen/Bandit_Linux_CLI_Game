@@ -44,13 +44,10 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 **:computer:Command:**
 
 ```sh
-~$ cd inhere
-~inhere$ ls -a
-
-There's a file called "...Hiding-From-You"
-
-~inhere$ cat ...Hiding-From-You
-
+cd inhere
+ls -a
+(There's a file called "...Hiding-From-You")
+cat ...Hiding-From-You
 ```
 
 **:unlock:Password:**
@@ -63,16 +60,12 @@ There's a file called "...Hiding-From-You"
 **:computer:Command:**
 
 ```sh
-~$ cd inhere
-~inhere$ ls
-
-Shows a bunch of files named -fileDIGITS
-
-~inhere$ file ./-file* 
-
-Shows that file07 is ASCII text
-
-~inhere$ cat ./-file07
+cd inhere
+ls
+(Shows a bunch of files named -fileDIGITS)
+file ./-file* 
+(Shows that file07 is ASCII text)
+cat ./-file07
 ```
 
 **:unlock:Password:**
@@ -85,9 +78,9 @@ Shows that file07 is ASCII text
 **:computer:Command:**
 
 ```sh
-~$ cd inhere
-~inhere$ find . -type f -size 1033c ! -executable (it's a file, it's 1033 bytes in size and it's not executable)
-~inhere$ cat ./maybehere07/.file2
+cd inhere
+find . -type f -size 1033c ! -executable (it's a file, it's 1033 bytes in size and it's not executable)
+cat ./maybehere07/.file2
 ```
 
 **:unlock:Password:**
@@ -100,13 +93,9 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 ```sh
 find / -user bandit7 -group bandit6 -size 33c
-
-A bunch of "Permission denied" messages
-
-find / -user bandit7 -group bandit6 -size 33c 2>/dev/null to suppress error messages about directories I don't have access to
-
-Shows a file called "/var/lib/dpkg/info/bandit7.password"
-
+(A bunch of "Permission denied" messages)
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null (to suppress error messages about directories I don't have access to)
+(Shows a file called "/var/lib/dpkg/info/bandit7.password")
 cat /var/lib/dpkg/info/bandit7.password
 ```
 
