@@ -307,14 +307,95 @@ And now we've entered lvl 17
 ## Level 17-18
 **:computer:Command:**
 ```sh
-xx
+diff passwords.new passwords.old
+42c42
+< x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+---
+> bSrACvJvvBSxEM2SGsV5sn09vc3xgqyp
 ```
 **:unlock:Password:**
 
 ```sh
-XXX
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 ```
 ## Level 18-19
+**:computer:Command:**
+```sh
+(Get into bandit18 without getting Bye bye)
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme" (because we know the next password in a readme file)
+(Enter password x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO)
+(We get cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8)
+```
+**:unlock:Password:**
+
+```sh
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+```
+## Level 19-20
+**:computer:Command:**
+```sh
+ls
+(We get bandit20-do)
+ls -la
+(We get:
+total 36
+drwxr-xr-x  2 root     root      4096 Jul 17 15:57 .
+drwxr-xr-x 70 root     root      4096 Jul 17 15:58 ..
+-rwsr-x---  1 bandit20 bandit19 14880 Jul 17 15:57 bandit20-do
+-rw-r--r--  1 root     root       220 Mar 31 08:41 .bash_logout
+-rw-r--r--  1 root     root      3771 Mar 31 08:41 .bashrc
+-rw-r--r--  1 root     root       807 Mar 31 08:41 .profile)
+./bandit20-do
+(we get Run a command as another user)
+bandit19@bandit:~$ ./bandit20-do id
+(We get uid=11019(bandit19) gid=11019(bandit19) euid=11020(bandit20) groups=11019(bandit19))
+bandit19@bandit:~$ ./bandit20-do ls -la /etc/bandit_pass
+(We get:
+total 152
+drwxr-xr-x   2 root     root      4096 Jul 17 15:56 .
+drwxr-xr-x 121 root     root     12288 Aug  1 14:49 ..
+-r--------   1 bandit0  bandit0      8 Jul 17 15:56 bandit0
+-r--------   1 bandit1  bandit1     33 Jul 17 15:56 bandit1
+-r--------   1 bandit10 bandit10    33 Jul 17 15:56 bandit10
+-r--------   1 bandit11 bandit11    33 Jul 17 15:56 bandit11
+-r--------   1 bandit12 bandit12    33 Jul 17 15:56 bandit12
+-r--------   1 bandit13 bandit13    33 Jul 17 15:56 bandit13
+-r--------   1 bandit14 bandit14    33 Jul 17 15:56 bandit14
+-r--------   1 bandit15 bandit15    33 Jul 17 15:56 bandit15
+-r--------   1 bandit16 bandit16    33 Jul 17 15:56 bandit16
+-r--------   1 bandit17 bandit17    33 Jul 17 15:56 bandit17
+-r--------   1 bandit18 bandit18    33 Jul 17 15:56 bandit18
+-r--------   1 bandit19 bandit19    33 Jul 17 15:56 bandit19
+-r--------   1 bandit2  bandit2     33 Jul 17 15:56 bandit2
+-r--------   1 bandit20 bandit20    33 Jul 17 15:56 bandit20
+-r--------   1 bandit21 bandit21    33 Jul 17 15:56 bandit21
+-r--------   1 bandit22 bandit22    33 Jul 17 15:56 bandit22
+-r--------   1 bandit23 bandit23    33 Jul 17 15:56 bandit23
+-r--------   1 bandit24 bandit24    33 Jul 17 15:56 bandit24
+-r--------   1 bandit25 bandit25    33 Jul 17 15:56 bandit25
+-r--------   1 bandit26 bandit26    33 Jul 17 15:56 bandit26
+-r--------   1 bandit27 bandit27    33 Jul 17 15:56 bandit27
+-r--------   1 bandit28 bandit28    33 Jul 17 15:56 bandit28
+-r--------   1 bandit29 bandit29    33 Jul 17 15:56 bandit29
+-r--------   1 bandit3  bandit3     33 Jul 17 15:56 bandit3
+-r--------   1 bandit30 bandit30    33 Jul 17 15:56 bandit30
+-r--------   1 bandit31 bandit31    33 Jul 17 15:56 bandit31
+-r--------   1 bandit32 bandit32    33 Jul 17 15:56 bandit32
+-r--------   1 bandit33 bandit33    33 Jul 17 15:56 bandit33
+-r--------   1 bandit4  bandit4     33 Jul 17 15:56 bandit4
+-r--------   1 bandit5  bandit5     33 Jul 17 15:56 bandit5
+-r--------   1 bandit6  bandit6     33 Jul 17 15:56 bandit6
+-r--------   1 bandit7  bandit7     33 Jul 17 15:56 bandit7
+-r--------   1 bandit8  bandit8     33 Jul 17 15:56 bandit8
+-r--------   1 bandit9  bandit9     33 Jul 17 15:56 bandit9)
+./bandit20-do cat /etc/bandit_pass/bandit20
+```
+**:unlock:Password:**
+
+```sh
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+```
+## Level 20-21
 **:computer:Command:**
 ```sh
 xx
@@ -324,7 +405,17 @@ xx
 ```sh
 XXX
 ```
-## Level 19-20
+## Level 21-22
+**:computer:Command:**
+```sh
+xx
+```
+**:unlock:Password:**
+
+```sh
+XXX
+```
+## Level 22-23
 **:computer:Command:**
 ```sh
 xx
