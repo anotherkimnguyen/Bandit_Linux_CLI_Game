@@ -425,3 +425,39 @@ xx
 ```sh
 XXX
 ```
+
+14 > 15
+(Start from bandit14)
+nc localhost 30000
+
+15 > 16
+ncat --ssl localhost 30001 (We hit enter and we enter the previous level's password aka:)
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+(We get:)
+Correct!
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+16 > 17
+(We need to identify which ports are open)
+nmap -p 31000-32000 localhost
+(We have 5 open ports - we need to check every port with our current level password)
+ncat localhost 31046 < /etc/bandit_pass/bandit16
+ncat --ssl localhost 31518 < /etc/bandit_pass/bandit16
+ncat localhost 31691 < /etc/bandit_pass/bandit16
+ncat --ssl localhost 31790 < /etc/bandit_pass/bandit16
+(We get the private key)
+(Copy the private key text)
+exit
+touch pvt.key
+nano pvt.key
+(Paste key text)
+(Make it private)
+chmod 700 pvt.key
+ssh bandit17@bandit.labs.overthewire.org -i pvt.key -p 2220
+
+17 > 18
+diff passwords.new passwords.old
+42c42
+< x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO (it's this one)
+---
+> bSrACvJvvBSxEM2SGsV5sn09vc3xgqyp
