@@ -1,5 +1,3 @@
-# Solution for clmystery - [Game here](https://github.com/veltman/clmystery)
-The murderer is ***Jeremy Bowers*** 💀
 # Passwords for the Trial of Might/Bandit game - [Game here](https://overthewire.org/wargames/bandit/)
 ## Level 0-1
 **:computer:Command:**
